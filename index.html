@@ -278,6 +278,178 @@
             page-break-after: always;
         }
         
+        @media (max-width: 768px) {
+            .slide {
+                padding: 2rem 1rem;
+                min-height: auto;
+            }
+            
+            .header {
+                flex-direction: column;
+                text-align: center;
+                align-items: center;
+            }
+            
+            .logo {
+                margin-right: 0;
+                margin-bottom: 1rem;
+                width: 80px;
+                height: 80px;
+            }
+            
+            h1 {
+                font-size: 2rem;
+            }
+            
+            h2 {
+                font-size: 1.5rem;
+            }
+            
+            h3 {
+                font-size: 1.2rem;
+            }
+            
+            .subtitle {
+                font-size: 1rem;
+            }
+            
+            .financial-table {
+                font-size: 0.8rem;
+                margin: 1rem 0;
+            }
+            
+            .financial-table th,
+            .financial-table td {
+                padding: 8px 4px;
+            }
+            
+            .metric-grid {
+                grid-template-columns: 1fr;
+                gap: 1rem;
+            }
+            
+            .investment-summary {
+                padding: 1.5rem;
+            }
+            
+            .investment-summary > div {
+                flex-direction: column !important;
+                gap: 1rem;
+            }
+            
+            .metric-value {
+                font-size: 1.5rem;
+            }
+            
+            .partnership-section {
+                padding: 1.5rem;
+                margin: 1rem 0;
+            }
+            
+            .key-facts li {
+                flex-direction: column;
+                align-items: flex-start;
+                padding: 1rem 0;
+            }
+            
+            .fact-label {
+                margin-bottom: 0.5rem;
+            }
+            
+            .slide-navigation {
+                bottom: 10px;
+                padding: 0 1rem;
+            }
+            
+            .nav-dot {
+                width: 10px;
+                height: 10px;
+            }
+            
+            .growth-projection {
+                overflow-x: auto;
+            }
+            
+            .financial-table {
+                min-width: 100%;
+                white-space: nowrap;
+                display: block;
+                overflow-x: auto;
+            }
+            
+            .financial-table thead,
+            .financial-table tbody,
+            .financial-table th,
+            .financial-table td,
+            .financial-table tr {
+                display: block;
+            }
+            
+            .financial-table thead tr {
+                position: absolute;
+                top: -9999px;
+                left: -9999px;
+            }
+            
+            .financial-table tr {
+                border: 1px solid #ccc;
+                margin-bottom: 1rem;
+                background: white;
+                border-radius: 4px;
+                padding: 0.5rem;
+            }
+            
+            .financial-table td {
+                border: none;
+                position: relative;
+                padding: 0.5rem 0;
+                text-align: left !important;
+                border-bottom: 1px solid #eee;
+            }
+            
+            .financial-table td:before {
+                content: attr(data-label) ": ";
+                font-weight: bold;
+                color: #2c5aa0;
+            }
+            
+            .risk-section {
+                padding: 1rem;
+                margin: 1rem 0;
+            }
+            
+            .metric-box {
+                padding: 1rem;
+                margin: 1rem 0;
+            }
+        }
+        
+        @media (max-width: 480px) {
+            h1 {
+                font-size: 1.8rem;
+            }
+            
+            h2 {
+                font-size: 1.3rem;
+            }
+            
+            .slide {
+                padding: 1.5rem 0.5rem;
+            }
+            
+            .financial-table {
+                font-size: 0.7rem;
+            }
+            
+            .metric-value {
+                font-size: 1.3rem;
+            }
+            
+            .investment-summary {
+                padding: 1rem;
+            }
+        }
+        
         @media print {
             .slide {
                 min-height: auto;
@@ -286,6 +458,9 @@
             .slide:last-child {
                 page-break-after: avoid;
             }
+            .slide-navigation {
+                display: none;
+            }
         }
     </style>
 </head>
@@ -293,9 +468,9 @@
     <!-- Slide 1: Executive Summary -->
     <div class="slide">
         <div class="header">
-           <div class="logo">
-    <img src="pride-logo.png" alt="Pride Dealer Services Logo" style="width: 100px; height: auto;">
-</div>
+            <div class="logo">
+                <img src="data:image/svg+xml;base64,PD94bWwgdmVyc2lvbj0iMS4wIiBlbmNvZGluZz0iVVRGLTgiPz4KPHN2ZyB3aWR0aD0iMjAwIiBoZWlnaHQ9IjI0MCIgdmlld0JveD0iMCAwIDIwMCAyNDAiIHN0eWxlPSJmaWxsOiAjMDAwOyI+CiAgICA8IS0tIENyb3duIC0tPgogICAgPHBhdGggZD0iTTYwIDMwIEw3MCA1MCBMODA0NSBMOTA1MCBMMTAWLDQ1IEwxMTAgNTAgTDEyMCA0NSBMMTMwIDUwIEwxNDAgMzAgTDE0MCA2NSBMNjAgNjUgWiIgZmlsbD0iIzAwMCIvPgogICAgPCEtLSBTaGllbGQgb3V0bGluZSAtLT4KICAgIDxwYXRoIGQ9Ik01MCA3MCBMNTAgMTgwIFE1MCAyMDAgMTAwIDIyMCBRMTUwIDIwMCAxNTAgMTgwIEwxNTAgNzAgWiIgc3Ryb2tlPSIjMDAwIiBzdHJva2Utd2lkdGg9IjMiIGZpbGw9Im5vbmUiLz4KICAgIDwhLS0gU2hpZWxkIGZpbGwgLS0+CiAgICA8cGF0aCBkPSJNNTUgNzUgTDU1IDE3NSBRNTUgMTkwIDEwMCAyMTAgUTE0NSAxOTAgMTQ1IDE3NSBMMTQ1IDc1IFoiIGZpbGw9IndoaXRlIi8+CiAgICA8IS0tIExpb24gaGVhZCAtLT4KICAgIDxjaXJjbGUgY3g9IjEwMCIgY3k9IjExMCIgcj0iMTUiIGZpbGw9IiMwMDAiLz4KICAgIDwhLS0gTGlvbiBtYW5lIC0tPgogICAgPHBhdGggZD0iTTg1IDEwMCBRMTAwIDg1IDExNSAxMDAgUTEyMCAxMTAgMTEwIDEyMCBRMTAwIDEyNSA5MCAxMjAgUTgwIDExMCA4NSAxMDAiIGZpbGw9IiMwMDAiLz4KICAgIDwhLS0gTGlvbiBib2R5IC0tPgogICAgPGVsbGlwc2UgY3g9IjEwMCIgY3k9IjE0MCIgcng9IjIwIiByeT0iMjUiIGZpbGw9IiMwMDAiLz4KICAgIDwhLS0gTGlvbiBsZWdzIC0tPgogICAgPHJlY3QgeD0iODUiIHk9IjE2MCIgd2lkdGg9IjgiIGhlaWdodD0iMTUiIGZpbGw9IiMwMDAiLz4KICAgIDxyZWN0IHg9Ijk1IiB5PSIxNjAiIHdpZHRoPSI4IiBoZWlnaHQ9IjE1IiBmaWxsPSIjMDAwIi8+CiAgICA8cmVjdCB4PSIxMDUiIHk9IjE2MCIgd2lkdGg9IjgiIGhlaWdodD0iMTUiIGZpbGw9IiMwMDAiLz4KICAgIDxyZWN0IHg9IjExNSIgeT0iMTYwIiB3aWR0aD0iOCIgaGVpZ2h0PSIxNSIgZmlsbD0iIzAwMCIvPgogICAgPCEtLSBMaW9uIHRhaWwgLS0+CiAgICA8cGF0aCBkPSJNMTIwIDE0NSBRMTMwIDE1MCAxMjUgMTYwIiBzdHJva2U9IiMwMDAiIHN0cm9rZS13aWR0aD0iNCIgZmlsbD0ibm9uZSIvPgo8L3N2Zz4K" alt="Pride Dealer Services Logo" style="width: 100px; height: auto;">
+            </div>
             <div>
                 <h1>Pride Dealer Services</h1>
                 <p class="subtitle">National Detail & Condition Reports Company</p>
