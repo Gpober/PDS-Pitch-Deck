@@ -143,7 +143,7 @@
         .financial-table th,
         .financial-table td {
             padding: 12px;
-            text-align: right;
+            text-align: center;
             border: 1px solid #ddd;
         }
         
@@ -317,16 +317,6 @@
                 font-size: 1rem;
             }
             
-            .financial-table {
-                font-size: 0.8rem;
-                margin: 1rem 0;
-            }
-            
-            .financial-table th,
-            .financial-table td {
-                padding: 8px 4px;
-            }
-            
             .metric-grid {
                 grid-template-columns: 1fr;
                 gap: 1rem;
@@ -370,45 +360,62 @@
                 height: 10px;
             }
             
+            /* Mobile-First Table Design */
             .financial-table {
-                display: block;
-                overflow-x: auto;
-                white-space: nowrap;
+                font-size: 0.85rem;
+                margin: 1rem 0;
+                border: 1px solid #ddd;
+                border-radius: 8px;
+                overflow: hidden;
+                box-shadow: 0 2px 4px rgba(0,0,0,0.1);
             }
             
-            .financial-table thead tr {
-                position: absolute;
-                top: -9999px;
-                left: -9999px;
+            .financial-table thead {
+                background: var(--brand);
+                color: white;
             }
             
-            .financial-table,
-            .financial-table tbody,
-            .financial-table tr,
-            .financial-table td {
-                display: block;
-            }
-            
-            .financial-table tr {
-                border: 1px solid #ccc;
-                margin-bottom: 1rem;
-                background: white;
-                border-radius: 4px;
-                padding: 0.5rem;
+            .financial-table th {
+                background: var(--brand);
+                color: white;
+                padding: 10px 8px;
+                font-size: 0.8rem;
+                font-weight: 600;
+                text-align: center;
             }
             
             .financial-table td {
-                border: none;
-                position: relative;
-                padding: 0.5rem 0;
-                text-align: left !important;
+                padding: 10px 8px;
                 border-bottom: 1px solid #eee;
+                font-size: 0.85rem;
+                white-space: nowrap;
+                overflow: hidden;
+                text-overflow: ellipsis;
+                text-align: center;
             }
             
-            .financial-table td:before {
-                content: attr(data-label) ": ";
-                font-weight: bold;
-                color: var(--brand);
+            .financial-table td:first-child {
+                text-align: left;
+                font-weight: 600;
+            }
+            
+            .financial-table tr:last-child td {
+                border-bottom: none;
+            }
+            
+            /* Horizontal scroll for tables */
+            .table-container {
+                overflow-x: auto;
+                -webkit-overflow-scrolling: touch;
+                margin: 1rem 0;
+                border-radius: 8px;
+                box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+            }
+            
+            .financial-table {
+                margin: 0;
+                min-width: 100%;
+                width: max-content;
             }
         }
         
@@ -426,7 +433,12 @@
             }
             
             .financial-table {
-                font-size: 0.7rem;
+                font-size: 0.75rem;
+            }
+            
+            .financial-table th,
+            .financial-table td {
+                padding: 8px 6px;
             }
             
             .metric-value {
