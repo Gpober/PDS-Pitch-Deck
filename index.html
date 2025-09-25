@@ -6,8 +6,12 @@
     <title>Pride Dealer Services - Investment Presentation</title>
     <meta property="og:title" content="Pride Dealer Services – Investment Presentation">
     <meta property="og:description" content="Profitable, national detail & condition reports provider; $5M for 50% equity.">
-    <meta property="og:image" content="pride-logo.png">
+    <meta property="og:image" content="https://gpober.github.io/PDS-Pitch-Deck/pride-logo.png">
     <meta name="twitter:card" content="summary_large_image">
+    <meta name="twitter:image" content="https://gpober.github.io/PDS-Pitch-Deck/pride-logo.png">
+    <link rel="canonical" href="https://gpober.github.io/PDS-Pitch-Deck/">
+    <link rel="icon" href="pride-logo.png">
+    <link rel="preload" as="image" href="pride-logo.png">
     <style>
         :root { 
             --brand: #2c5aa0; 
@@ -450,6 +454,27 @@
             }
         }
         
+        @media (prefers-reduced-motion: reduce) {
+            html { scroll-behavior: auto !important; }
+            .nav-dot { transition: none; }
+        }
+        
+        .download-button {
+            padding: 0.8rem 1.2rem;
+            border: 1px solid var(--brand);
+            border-radius: 8px;
+            background: var(--bg);
+            color: var(--brand);
+            cursor: pointer;
+            font-size: 1rem;
+            font-weight: 600;
+        }
+        
+        .download-button:hover {
+            background: var(--brand);
+            color: white;
+        }
+        
         @media print {
             .slide {
                 min-height: auto;
@@ -479,7 +504,7 @@
     <div class="slide" id="slide-1">
         <div class="header">
             <div class="logo">
-                <img src="pride-logo.png" alt="Pride Dealer Services Logo" style="width: 100px; height: auto;">
+                <img src="pride-logo.png" alt="Pride Dealer Services Logo" width="100" height="100" loading="eager" decoding="async">
             </div>
             <div>
                 <h1>Pride Dealer Services</h1>
@@ -775,6 +800,10 @@
                 <li>
                     <span class="fact-label">Available Expansion Sites</span>
                     <span class="fact-value">100+ Manheim Locations Nationwide</span>
+                </li>
+                <li>
+                    <span class="fact-label">Rollout Assumptions</span>
+                    <span class="fact-value">10-site rollout, 6-9 mo ramp, $18-25K/site/mo steady-state</span>
                 </li>
                 <li>
                     <span class="fact-label">Expected Growth (10 new sites)</span>
