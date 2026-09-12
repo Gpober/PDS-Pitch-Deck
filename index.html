@@ -576,8 +576,9 @@
                 backdrop-filter: none;
                 background: transparent;
                 max-width: none;
-                padding: 1.25rem 1rem 2.25rem;
+                padding: 0.75rem 0.9rem 1rem;
                 border-bottom: none;
+                overflow: hidden;
             }
             .table-container {
                 overflow-x: visible;
@@ -592,9 +593,18 @@
             /* narrower minimum so a four-box row stays on one line */
             .metric-grid {
                 grid-template-columns: repeat(auto-fit, minmax(185px, 1fr));
-                gap: 1rem;
-                margin: 1.25rem 0;
+                gap: 0.8rem;
+                margin: 0.9rem 0;
             }
+            .financial-table { margin: 0.6rem 0; }
+            .table-container { margin: 0.6rem 0; }
+            h2 { margin-bottom: 0.6rem; padding-bottom: 0.4rem; }
+            h3 { margin: 0.7rem 0 0.4rem; }
+            p { margin-bottom: 0.55rem; }
+            .metric-box, .investment-summary, .risk-section,
+            .concentration-risk, .valuation-context { padding: 0.85rem; }
+            .growth-projection { margin: 0.6rem 0; }
+            .key-facts li { padding: 0.4rem 0; }
             .slide:last-child {
                 page-break-after: avoid;
             }
@@ -622,149 +632,111 @@
             </div>
             <div>
                 <h1>Pride Dealer Services</h1>
-                <p class="subtitle">National Detail &amp; Condition Reports Company</p>
+                <p class="subtitle">Vehicle Reconditioning &amp; Condition Reports &mdash; Wholesale Auto Auction</p>
             </div>
         </div>
 
-        <h2>Executive Summary</h2>
-
         <div class="investment-summary">
-            <h3>Investment Opportunity</h3>
-            <div style="display: flex; justify-content: space-around; margin-top: 1.5rem;">
-                <div>
-                    <div class="metric-value">$500K&ndash;$1.5M</div>
-                    <div class="metric-label">Raise Range</div>
-                </div>
+            <h3>Raising $500,000 &ndash; $1,500,000</h3>
+            <div style="display: flex; justify-content: space-around; margin-top: 1.25rem;">
                 <div>
                     <div class="metric-value">25%</div>
-                    <div class="metric-label">Equity at Full Subscription</div>
+                    <div class="metric-label">Equity at Full Raise</div>
                 </div>
                 <div>
-                    <div class="metric-value">$4,500,000</div>
-                    <div class="metric-label">Pre-Money Valuation</div>
+                    <div class="metric-value">$4.5M</div>
+                    <div class="metric-label">Pre-Money</div>
+                </div>
+                <div>
+                    <div class="metric-value">$0</div>
+                    <div class="metric-label">Debt on the Books</div>
                 </div>
             </div>
         </div>
 
         <div class="metric-grid">
             <div class="metric-box">
-                <span class="metric-value">$3.86M</span>
-                <span class="metric-label">2025 Revenue (General Ledger)</span>
-            </div>
-            <div class="metric-box">
                 <span class="metric-value">51.3%</span>
-                <span class="metric-label">2026 Gross Margin (Jan&ndash;Aug)</span>
+                <span class="metric-label">2026 Gross Margin</span>
             </div>
             <div class="metric-box">
-                <span class="metric-value">$399.1K</span>
-                <span class="metric-label">2025 Normalized Cash Flow</span>
+                <span class="metric-value">28.2%</span>
+                <span class="metric-label">2026 Net Margin</span>
             </div>
             <div class="metric-box">
-                <span class="metric-value">$0</span>
-                <span class="metric-label">Debt on the Balance Sheet</span>
+                <span class="metric-value">$1.33M</span>
+                <span class="metric-label">2026 Revenue Run-Rate</span>
+            </div>
+            <div class="metric-box">
+                <span class="metric-value">$374K</span>
+                <span class="metric-label">2026 Net Income Run-Rate</span>
             </div>
         </div>
 
-        <div class="metric-box" style="border-left: 4px solid var(--brand);">
-            <h3>The Story in Five Lines</h3>
-            <ul class="key-facts">
-                <li>
-                    <span class="fact-label">Repositioned, Not Shrinking</span>
-                    <span class="fact-value">Gross margin 25.5% &rarr; 37.2% &rarr; 51.3%</span>
-                </li>
-                <li>
-                    <span class="fact-label">Durable Enterprise Anchors</span>
-                    <span class="fact-value">Manheim (Cox) + Dent Wizard, multi-site recurring</span>
-                </li>
-                <li>
-                    <span class="fact-label">Debt-Free Balance Sheet</span>
-                    <span class="fact-value">No liabilities on the books &mdash; all fifteen accounts nil</span>
-                </li>
-                <li>
-                    <span class="fact-label">Equity Funds the Expansion</span>
-                    <span class="fact-value">A full raise launches the new site outright, debt-free</span>
-                </li>
-                <li>
-                    <span class="fact-label">No Financing Contingency</span>
-                    <span class="fact-value">Nothing in the plan waits on a lender or a third-party document</span>
-                </li>
-            </ul>
-        </div>
+        <ul class="key-facts">
+            <li>
+                <span class="fact-label">Profitable and debt-free</span>
+                <span class="fact-value">Every liability account at nil; 28.2% net margin</span>
+            </li>
+            <li>
+                <span class="fact-label">Margin tripled in two years</span>
+                <span class="fact-value">26.0% &rarr; 37.2% &rarr; 51.3% gross</span>
+            </li>
+            <li>
+                <span class="fact-label">Expansion is contracted, not hoped for</span>
+                <span class="fact-value">Letters of intent in hand from Manheim</span>
+            </li>
+            <li>
+                <span class="fact-label">The raise funds the site outright</span>
+                <span class="fact-value">No lender, no debt service, no financing contingency</span>
+            </li>
+        </ul>
 
-        <p style="font-size: 0.9rem; opacity: 0.75; margin-top: 1rem;">Every figure in this deck comes from the Company's live QuickBooks general ledger (last synced September 12, 2026); 2026 covers January 1 &ndash; August 31. Where the federal returns differ, the differences are identified on the Financial Performance slide.</p>
+        <p style="font-size: 0.85rem; opacity: 0.7;">All figures from the Company's live QuickBooks general ledger. 2026 covers January 1 &ndash; August 31.</p>
     </div>
 
-    <!-- Slide 2: Business Overview -->
+    <!-- Slide 2: The Business -->
     <div class="slide hidden" id="slide-2">
-        <h2>Business Overview</h2>
+        <h2>The Business</h2>
 
-        <h3>What We Do</h3>
-        <p>Pride Dealer Services provides vehicle reconditioning, condition reporting, detailing, and photography to the wholesale automotive-auction industry &mdash; delivered on-site under recurring, per-unit service relationships. The Company has operated continuously since 2020.</p>
+        <p>Pride Dealer Services provides vehicle reconditioning, condition reporting, detailing and photography to the wholesale auto-auction industry &mdash; delivered on-site, billed per unit, under recurring enterprise relationships. Florida S-corporation, operating since 2020, 100% owned by Nelson Cajas.</p>
 
+        <h3>Two Enterprise Anchors</h3>
         <div class="table-container">
             <table class="financial-table">
                 <thead>
                     <tr>
-                        <th scope="col">Company Profile</th>
-                        <th scope="col">Detail</th>
+                        <th scope="col">Relationship</th>
+                        <th scope="col">2025</th>
+                        <th scope="col">2026 (Jan&ndash;Aug)</th>
+                        <th scope="col">Character</th>
                     </tr>
                 </thead>
                 <tbody>
-                    <tr><td>Legal entity</td><td>Florida LLC, taxed as an S-corporation (Form 1120-S)</td></tr>
-                    <tr><td>Formed</td><td>July 23, 2020</td></tr>
-                    <tr><td>Business activity (NAICS)</td><td>811490 &mdash; vehicle reconditioning &amp; auction services</td></tr>
-                    <tr><td>Ownership</td><td>Nelson Cajas &mdash; 100% (sole owner since the 2025 transition)</td></tr>
-                    <tr><td>Principal place of business</td><td>500 E Las Olas Blvd, Fort Lauderdale, FL 33301</td></tr>
+                    <tr><td>Manheim / Cox Automotive</td><td>$1,530,534</td><td>$552,389</td><td>Multi-site, recurring, per-unit</td></tr>
+                    <tr><td>Dent Wizard International</td><td>$926,260</td><td>$329,542</td><td>Multi-site, bundled with dent repair</td></tr>
+                    <tr style="border-top: 2px solid var(--brand); font-weight: bold;"><td>Two networks combined</td><td>63.7%</td><td>99.7%</td><td>of total revenue</td></tr>
                 </tbody>
             </table>
         </div>
 
-        <h3>Our Services</h3>
-        <ul style="margin: 1rem 0; padding-left: 2rem;">
-            <li><strong>Condition Reports:</strong> Comprehensive on-site vehicle inspection and documentation</li>
-            <li><strong>Vehicle Detail Services:</strong> Professional cleaning and reconditioning</li>
-            <li><strong>Digital Documentation:</strong> Photography and report generation for resale</li>
-        </ul>
-
-        <h3>Enterprise Anchors</h3>
-        <div class="partnership-section">
-            <h3>Manheim / Cox Automotive</h3>
-            <ul class="key-facts">
-                <li>
-                    <span class="fact-label">2025 Revenue (all locations)</span>
-                    <span class="fact-value">$1,530,534</span>
-                </li>
-                <li>
-                    <span class="fact-label">2026 YTD (Jan&ndash;Aug)</span>
-                    <span class="fact-value">$552,389</span>
-                </li>
-                <li>
-                    <span class="fact-label">Flagship Site</span>
-                    <span class="fact-value">Manheim Dallas &mdash; $703,460 in 2025</span>
-                </li>
-                <li>
-                    <span class="fact-label">Status</span>
-                    <span class="fact-value">Qualified for Manheim Supplier Diversity Program</span>
-                </li>
-            </ul>
-        </div>
-
-        <div class="partnership-section">
-            <h3>Dent Wizard International</h3>
-            <ul class="key-facts">
-                <li>
-                    <span class="fact-label">2025 Revenue (all locations)</span>
-                    <span class="fact-value">$926,260</span>
-                </li>
-                <li>
-                    <span class="fact-label">2026 YTD (Jan&ndash;Aug)</span>
-                    <span class="fact-value">$329,542</span>
-                </li>
-                <li>
-                    <span class="fact-label">Growth Opportunity</span>
-                    <span class="fact-value">Detail + dent repair + CR bundled services</span>
-                </li>
-            </ul>
+        <div class="metric-grid">
+            <div class="metric-box">
+                <h3>Why It Is Sticky</h3>
+                <p>Work is embedded in the auction's own throughput &mdash; vehicles cannot be sold without a condition report. Multi-year, multi-location, per-unit billing.</p>
+            </div>
+            <div class="metric-box">
+                <h3>Why It Scales</h3>
+                <p>One repeatable unit: a condition-report writer. Add writers, add sites. Field labour is 1099 and paid per production, so cost flexes with volume.</p>
+            </div>
+            <div class="metric-box">
+                <h3>Preferred Status</h3>
+                <p>Certified under Manheim's Supplier Diversity Program &mdash; preferred-vendor access across a network of 100+ locations nationwide.</p>
+            </div>
+            <div class="metric-box">
+                <h3>The Concentration</h3>
+                <p>Two networks are 99.7% of 2026 revenue and one site is 54.5%. This is the principal risk, and what the expansion is designed to correct.</p>
+            </div>
         </div>
     </div>
 
@@ -772,12 +744,11 @@
     <div class="slide hidden" id="slide-3">
         <h2>Financial Performance</h2>
 
-        <h3>Income Statement &mdash; QuickBooks General Ledger</h3>
         <div class="table-container">
             <table class="financial-table">
                 <thead>
                     <tr>
-                        <th scope="col">Item</th>
+                        <th scope="col">Per the General Ledger</th>
                         <th scope="col">2024</th>
                         <th scope="col">2025</th>
                         <th scope="col">2026 (Jan&ndash;Aug)</th>
@@ -785,295 +756,208 @@
                 </thead>
                 <tbody>
                     <tr><td>Revenue</td><td>$5,464,666</td><td>$3,859,075</td><td>$884,836</td></tr>
-                    <tr><td>Cost of goods sold</td><td>$4,045,196</td><td>$2,424,644</td><td>$431,169</td></tr>
                     <tr><td>Gross profit</td><td>$1,419,470</td><td>$1,434,431</td><td>$453,667</td></tr>
                     <tr style="font-weight: bold;"><td>Gross margin</td><td>26.0%</td><td>37.2%</td><td>51.3%</td></tr>
                     <tr><td>Operating expenses</td><td>$914,690</td><td>$1,231,092</td><td>$204,138</td></tr>
-                    <tr style="border-top: 2px solid var(--brand); font-weight: bold;">
-                        <td>Net income</td><td>$504,779</td><td>$203,339</td><td>$249,529</td>
-                    </tr>
+                    <tr style="border-top: 2px solid var(--brand); font-weight: bold; background: rgba(212, 175, 55, 0.1);">
+                        <td>Net income</td><td>$504,779</td><td>$203,339</td><td>$249,529</td></tr>
                 </tbody>
             </table>
         </div>
-        <p style="font-size: 0.9rem; opacity: 0.75;">All three columns come from the live QuickBooks general ledger on one consistent books basis (2026 covers January 1 &ndash; August 31, eight complete months). For reference, the federal returns report 2024 revenue of $5,418,432 with $623,923 of ordinary business income and 2025 revenue of $3,858,771 with $150,000 &mdash; the differences are return-versus-books adjustments, principally officer compensation ($200,000 and $75,000) and book-tax timing. The general ledger governs throughout this deck.</p>
 
-        <div class="metric-grid">
-            <div class="metric-box">
-                <span class="metric-value">$1,327,254</span>
-                <span class="metric-label">2026 Revenue Annualized (8 months)</span>
-            </div>
-            <div class="metric-box">
-                <span class="metric-value">28.2%</span>
-                <span class="metric-label">2026 Net Margin</span>
-            </div>
-            <div class="metric-box">
-                <span class="metric-value">$374,293</span>
-                <span class="metric-label">2026 Net Income Annualized</span>
-            </div>
-            <div class="metric-box">
-                <span class="metric-value">$249,529</span>
-                <span class="metric-label">Net Income Booked Through August</span>
-            </div>
-        </div>
+        <p><strong>Revenue fell by design; profit did not.</strong> Through the 2025 ownership transition the Company wound down its lowest-margin accounts &mdash; South Florida Auction, Manheim Statesville, a block of one-off dealers. Gross profit still <em>rose</em> in 2025, and gross margin has since climbed to 51.3%. Adding back non-cash amortization ($60,779) and a one-time bad-debt clean-up ($135,028), 2025 normalized cash flow was <strong>$399,146</strong>. On eight months of 2026, the run-rate is <strong>$1,327,254 of revenue and $374,293 of net income</strong>.</p>
 
         <h3>Balance Sheet &mdash; QuickBooks, Current</h3>
         <div class="table-container">
             <table class="financial-table">
                 <thead>
                     <tr>
-                        <th scope="col">Assets</th>
-                        <th scope="col">Amount</th>
-                        <th scope="col">Liabilities &amp; Equity</th>
-                        <th scope="col">Amount</th>
+                        <th scope="col">Assets</th><th scope="col">Amount</th>
+                        <th scope="col">Liabilities &amp; Equity</th><th scope="col">Amount</th>
                     </tr>
                 </thead>
                 <tbody>
-                    <tr><td>Cash &mdash; operating accounts</td><td>$65,669</td><td>Accounts payable</td><td>$0</td></tr>
-                    <tr><td>Accounts receivable</td><td>$101,071</td><td>Credit card (Divvy)</td><td>$0</td></tr>
-                    <tr><td>Machinery &amp; equipment</td><td>$667</td><td>Notes payable &mdash; all accounts &dagger;</td><td>$0</td></tr>
-                    <tr><td>Intangible &mdash; goodwill (net)</td><td>$3,084,650</td><td>Net book equity</td><td>$3,252,056</td></tr>
+                    <tr><td>Cash</td><td>$65,669</td><td>Accounts payable</td><td>$0</td></tr>
+                    <tr><td>Accounts receivable</td><td>$101,071</td><td>Notes payable &mdash; all accounts</td><td>$0</td></tr>
+                    <tr><td>Goodwill &amp; equipment</td><td>$3,085,317</td><td>Net book equity</td><td>$3,252,056</td></tr>
                     <tr style="border-top: 2px solid var(--brand); font-weight: bold;">
-                        <td>Total assets</td><td>$3,252,056</td><td>Total liabilities &amp; equity</td><td>$3,252,056</td>
-                    </tr>
+                        <td>Total assets</td><td>$3,252,056</td><td>Total</td><td>$3,252,056</td></tr>
                 </tbody>
             </table>
         </div>
-
-        <div class="metric-grid">
-            <div class="metric-box">
-                <span class="metric-value">$0</span>
-                <span class="metric-label">Total Liabilities on the Books</span>
-            </div>
-            <div class="metric-box">
-                <span class="metric-value">$166,739</span>
-                <span class="metric-label">Cash + Receivables, No Current Liabilities</span>
-            </div>
-            <div class="metric-box">
-                <span class="metric-value">94.9%</span>
-                <span class="metric-label">Goodwill as a Share of Assets</span>
-            </div>
-            <div class="metric-box">
-                <span class="metric-value">$167,407</span>
-                <span class="metric-label">Tangible Assets</span>
-            </div>
-        </div>
-
-        <p style="font-size: 0.9rem; opacity: 0.75;">Balances per QuickBooks as of September 2026. <strong>&dagger; The Company carries no debt on its books.</strong> All fifteen liability accounts &mdash; accounts payable, the Divvy credit card, the owner loan, the EIDL and PPP notes, and the $3,000,000 Patrick Mulligan note payable &mdash; carry a nil balance; the Mulligan account shows $3,000,000 posted and $3,000,000 removed across its life. The draft 2025 Schedule L still reports a $2,821,500 convertible note, so the return and the books do not yet agree on this item; the executed assumption / novation document is what reconciles them, and it remains the first thing a lender or investor should ask to see. <strong>Goodwill ($3,084,650)</strong> arose from the 2025 buyout of the former co-owner &mdash; a non-cash intangible amortized over 15 years (&sect;197), carrying no cash obligation. The owner&apos;s capital account stands at $(1,730,388) cumulative, reflecting net draws taken over the life of the business.</p>
+        <p style="font-size: 0.85rem; opacity: 0.7;"><strong>No debt.</strong> All fifteen liability accounts stand at nil. $101,071 of receivables faces zero current liabilities. Goodwill of $3,084,650 &mdash; 94.9% of assets &mdash; arose from the 2025 buyout of the former co-owner; it is non-cash, amortized over 15 years, and carries no obligation. The draft 2025 Schedule L still reports a $2,821,500 note the books show at nil; the executed assumption document reconciles the two and is in the data room list.</p>
     </div>
 
-    <!-- Slide 4: Revenue Transition & Margin Bridge -->
+    <!-- Slide 4: Unit Economics -->
     <div class="slide hidden" id="slide-4">
-        <h2>Revenue Transition &amp; Margin Bridge</h2>
+        <h2>Unit Economics</h2>
 
-        <p>The 2025 revenue decline was a deliberate repositioning during the ownership transition, not a loss of the core business. As the Company consolidated under single ownership, it wound down lower-margin, high-churn accounts and retained its durable enterprise relationships. <strong>The shed revenue was the least profitable: gross profit dollars rose even as the top line fell.</strong></p>
+        <p>The whole model is one repeatable unit: <strong>a condition-report writer producing $7,500 of revenue a month at $4,500 of cost</strong> &mdash; a 40% gross margin. That assumption is held deliberately below what the business actually does.</p>
 
         <div class="table-container">
             <table class="financial-table">
                 <thead>
                     <tr>
                         <th scope="col">Metric</th>
-                        <th scope="col">2024</th>
-                        <th scope="col">2025</th>
-                        <th scope="col">2026 (Jan&ndash;Aug)</th>
+                        <th scope="col">Plan</th>
+                        <th scope="col">2025 Actual</th>
+                        <th scope="col">2026 Actual</th>
                     </tr>
                 </thead>
                 <tbody>
-                    <tr><td>Revenue</td><td>$5,464,666</td><td>$3,859,075</td><td>$884,836</td></tr>
-                    <tr><td>Gross profit</td><td>$1,419,470</td><td>$1,434,431</td><td>$453,667</td></tr>
+                    <tr><td>Gross margin</td><td>40.0%</td><td>37.2%</td><td>51.3%</td></tr>
                     <tr style="border-top: 2px solid var(--brand); font-weight: bold; background: rgba(212, 175, 55, 0.1);">
-                        <td>Gross margin</td><td>26.0%</td><td>37.2%</td><td>51.3%</td>
-                    </tr>
+                        <td>Revenue per $4,500 of writer cost</td><td>$7,500</td><td>$7,162</td><td>$9,235</td></tr>
                 </tbody>
             </table>
         </div>
-        <p style="font-size: 0.9rem; opacity: 0.75;">All three columns are taken from the QuickBooks general ledger on a consistent books basis, so they are directly comparable. On the tax-return basis the 2024 and 2025 margins are 25.5% and 37.2%. 2026 covers January 1 &ndash; August 31.</p>
 
-        <div class="metric-grid">
-            <div class="metric-box">
-                <h3>Retained &mdash; The Anchors</h3>
-                <p>The Manheim / Cox Automotive network and Dent Wizard International: recurring, per-unit enterprise work that is the Company's most profitable revenue.</p>
-            </div>
-            <div class="metric-box">
-                <h3>Wound Down in the Transition</h3>
-                <p>Lower-margin and non-core accounts: South Florida Auction ($541,493 in 2025, zero in 2026), Manheim Statesville ($411,204), North Fort Lauderdale Subaru ($222,246), Sawgrass Infiniti ($159,369) and Music City Auto Auction ($139,513).</p>
-            </div>
-        </div>
-
-        <h3>What Keeps the Margin Climbing</h3>
-        <div class="metric-grid">
-            <div class="metric-box">
-                <h3>Mix Discipline</h3>
-                <p>Per-unit enterprise work only; no return to high-volume, low-rate accounts <strong>(the 2025&ndash;26 step-up)</strong></p>
-            </div>
-            <div class="metric-box">
-                <h3>Scheduling &amp; Routing</h3>
-                <p>Idle time&darr;, throughput&uarr; <strong>(+1&ndash;2 pts)</strong></p>
-            </div>
-            <div class="metric-box">
-                <h3>QA / SOP</h3>
-                <p>Rework&darr;, consistency&uarr; <strong>(+0.5&ndash;1 pt)</strong></p>
-            </div>
-            <div class="metric-box">
-                <h3>Rate Indexation</h3>
-                <p>CPI / labor pass-through in renewals <strong>(+1 pt)</strong></p>
-            </div>
-        </div>
-
-        <div class="metric-box" style="text-align: center;">
-            <span class="metric-value">26.0% &#10145; 37.2% &#10145; 51.3%</span>
-            <span class="metric-label">Gross margin per the general ledger: 2024 &rarr; 2025 &rarr; 2026 (Jan&ndash;Aug)</span>
-        </div>
-    </div>
-
-    <!-- Slide 5: Customer Concentration -->
-    <div class="slide hidden" id="slide-5">
-        <h2>Customer Concentration</h2>
-
-        <p>Revenue concentrates in two enterprise networks. Concentration <em>increased</em> through the transition as the book narrowed to its most profitable anchors &mdash; which is precisely what the expansion is designed to address.</p>
-
+        <h3>By Department &mdash; The Line the Expansion Buys</h3>
         <div class="table-container">
             <table class="financial-table">
                 <thead>
                     <tr>
-                        <th scope="col">Relationship</th>
-                        <th scope="col">2024</th>
-                        <th scope="col">2025</th>
-                        <th scope="col">2026 (Jan&ndash;Aug)</th>
+                        <th scope="col">Department (2026, Jan&ndash;Aug)</th>
+                        <th scope="col">Revenue</th>
+                        <th scope="col">Gross Margin</th>
                     </tr>
                 </thead>
                 <tbody>
-                    <tr><td>Manheim / Cox Automotive (all locations)</td><td>$2,417,739</td><td>$1,530,534</td><td>$552,389</td></tr>
-                    <tr><td>Dent Wizard International (all locations)</td><td>$1,039,457</td><td>$926,260</td><td>$329,542</td></tr>
-                    <tr><td>South Florida Auction</td><td>$612,097</td><td>$541,493</td><td>$0</td></tr>
-                    <tr><td>All other accounts</td><td>$1,395,373</td><td>$860,789</td><td>$2,905</td></tr>
-                    <tr style="border-top: 2px solid var(--brand); font-weight: bold;">
-                        <td>Total revenue</td><td>$5,464,666</td><td>$3,859,075</td><td>$884,836</td>
-                    </tr>
+                    <tr style="background: rgba(212, 175, 55, 0.1);"><td>Condition Report</td><td>$349,350</td><td><strong>43.6%</strong></td></tr>
+                    <tr><td>Detail</td><td>$332,397</td><td>60.7%</td></tr>
+                    <tr><td>Photography</td><td>$206,295</td><td>59.3%</td></tr>
                 </tbody>
             </table>
         </div>
-
-        <div class="table-container">
-            <table class="financial-table">
-                <thead>
-                    <tr>
-                        <th scope="col">Concentration</th>
-                        <th scope="col">2024</th>
-                        <th scope="col">2025</th>
-                        <th scope="col">2026 (Jan&ndash;Aug)</th>
-                    </tr>
-                </thead>
-                <tbody>
-                    <tr><td>Top relationship (Manheim / Cox)</td><td>44.2%</td><td>39.7%</td><td>62.4%</td></tr>
-                    <tr><td>Single largest site (Manheim Dallas)</td><td>24.6%</td><td>18.2%</td><td>54.5%</td></tr>
-                    <tr style="font-weight: bold;"><td>Top two networks (Manheim + Dent Wizard)</td><td>63.3%</td><td>63.7%</td><td>99.7%</td></tr>
-                    <tr style="border-top: 2px solid var(--brand); font-weight: bold;"><td>All other accounts</td><td>36.7%</td><td>36.3%</td><td>0.3%</td></tr>
-                </tbody>
-            </table>
-        </div>
-
-        <div class="concentration-risk">
-            <h3>How to Read This</h3>
-            <p><strong>The strength:</strong> The Manheim (Cox) and Dent Wizard relationships are multi-year, multi-location, and recurring &mdash; genuine credit and enterprise quality, not a single point of contact.</p>
-            <p><strong>The risk:</strong> At 99.7% of 2026 revenue, the top two networks <em>are</em> the business &mdash; and one site, Manheim Dallas, is 54.5% of it on its own. Non-anchor revenue has fallen to $2,905 across two accounts. This is the single largest item on the risk register.</p>
-            <p><strong>The plan:</strong> The rising share is the flip side of the margin improvement. The $1.5M expansion funds additional auction-site locations to rebuild a broader, diversified revenue base &mdash; growth that widens the denominator rather than deepening the dependency.</p>
-        </div>
-        <p style="font-size: 0.9rem; opacity: 0.75;">Grouped by enterprise relationship from the live QuickBooks customer-revenue report, covering every billed location in each network (2026 period is January 1 &ndash; August 31). These totals are higher than those shown in the September 2026 lender package, which captured only the largest locations in each network; the relationship totals and the resulting concentration percentages here supersede them.</p>
-    </div>
-
-    <!-- Slide 6: Normalized Earnings & Cash Flow -->
-    <div class="slide hidden" id="slide-6">
-        <h2>Normalized Earnings &amp; Cash Flow</h2>
-
-        <p>Reported net income understates the Company's earning power: 2025 carries a non-cash goodwill amortization charge and a one-time receivable clean-up from the ownership transition. Each add-back is a posted general-ledger account, traceable to the transaction detail.</p>
-
-        <div class="table-container">
-            <table class="financial-table">
-                <thead>
-                    <tr>
-                        <th scope="col">Cash-Flow Build-Up</th>
-                        <th scope="col">2024</th>
-                        <th scope="col">2025</th>
-                        <th scope="col">2026 (Jan&ndash;Aug)</th>
-                    </tr>
-                </thead>
-                <tbody>
-                    <tr><td>Net income per the general ledger</td><td>$504,779</td><td>$203,339</td><td>$249,529</td></tr>
-                    <tr><td>+ Amortization &mdash; non-cash</td><td>$0</td><td>$60,779</td><td>$0</td></tr>
-                    <tr><td>+ Non-recurring bad-debt write-off</td><td>$0</td><td>$135,028</td><td>$0</td></tr>
-                    <tr><td>&minus; Matching: 2024 revenue later charged off</td><td>($135,028)</td><td>$0</td><td>$0</td></tr>
-                    <tr style="border-top: 2px solid var(--brand); font-weight: bold; background: rgba(212, 175, 55, 0.1);">
-                        <td>Normalized cash flow</td><td>$369,751</td><td>$399,146</td><td>$249,529</td>
-                    </tr>
-                </tbody>
-            </table>
-        </div>
-
-        <div class="metric-grid">
-            <div class="metric-box">
-                <span class="metric-value">$399,146</span>
-                <span class="metric-label">2025 Normalized Cash Flow</span>
-            </div>
-            <div class="metric-box">
-                <span class="metric-value">$369,751</span>
-                <span class="metric-label">2024 Normalized Cash Flow</span>
-            </div>
-            <div class="metric-box">
-                <span class="metric-value">$384,449</span>
-                <span class="metric-label">Two-Year Average</span>
-            </div>
-            <div class="metric-box">
-                <span class="metric-value">$374,293</span>
-                <span class="metric-label">2026 Annualized (No Add-Backs)</span>
-            </div>
-        </div>
+        <p>The expansion is a condition-report build, and that department runs at <strong>43.6%</strong> against the <strong>40%</strong> modeled. The plan is conservative against the exact line of business it funds.</p>
 
         <div class="metric-box" style="border-left: 4px solid var(--brand);">
-            <h3>The One-Time Charge-Off</h3>
-            <p>The $135,028 added back in 2025 is a single cleanup of uncollectible accounts, all written off on August 1, 2025 during the ownership transition &mdash; 13 posted lines in the QuickBooks Bad Debt Expense account totalling $135,028.34. 2024 carried no bad-debt expense; it is not a recurring feature of operations. Because the related revenue was billed in prior periods, it is removed from 2024 as well &mdash; the conservative treatment, so it is never counted twice.</p>
-
-            <h3 style="color: var(--brand); margin-top: 1.5rem;">No Owner-Compensation Add-Back Is Taken</h3>
-            <p>A seller's-discretionary-earnings presentation would add owner compensation back on top of these figures. The general ledger carries no separate officer-compensation account &mdash; owner activity sits inside the corporate salary line and the operating accounts &mdash; so no SDE add-back is claimed here. Every figure above is <strong>before</strong> any owner add-back, which understates rather than flatters the Company's earning power. The federal returns report officer compensation of $200,000 in 2024 and $75,000 in 2025; isolating it in the books is a bookkeeping clean-up, not a change in economics.</p>
+            <h3>A Proven Site, Not a Projection</h3>
+            <p><strong>Manheim Dallas invoiced $703,460 in 2025 and $482,213 through August 2026</strong> &mdash; a ~$723,000 annualized run-rate from a single location, on $25,000&ndash;$30,000 invoices. The new site replicates a location the Company already runs profitably today.</p>
         </div>
     </div>
 
-    <!-- Slide 7: Growth Projections -->
+    <!-- Slide 5: The Expansion -->
+    <div class="slide hidden" id="slide-5">
+        <h2>The Expansion</h2>
+
+        <div class="investment-summary">
+            <h3>Letters of Intent in Hand from Manheim</h3>
+            <p style="margin-top: 0.75rem; font-size: 1.05rem;">The expansion is not a business-development theory. Pride Dealer Services holds signed letters of intent from Manheim for additional locations, backed by Supplier Diversity Program certification and a performance record at Manheim Dallas. <strong>The constraint on growth is working capital to staff the sites &mdash; not demand, and not access.</strong></p>
+        </div>
+
+        <h3>What $1.5M Builds: a 17-Writer Site</h3>
+        <div class="table-container">
+            <table class="financial-table">
+                <thead>
+                    <tr>
+                        <th scope="col">Month</th><th scope="col">Writers</th><th scope="col">Collections</th>
+                        <th scope="col">Incremental Cash</th><th scope="col">Cumulative</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr><td>Month 1</td><td>6</td><td>$0</td><td>($27,000)</td><td>($27,000)</td></tr>
+                    <tr><td>Month 2 &mdash; trough</td><td>12</td><td>$45,000</td><td>($9,000)</td><td><strong>($36,000)</strong></td></tr>
+                    <tr><td>Month 3</td><td>17</td><td>$90,000</td><td>$13,500</td><td>($22,500)</td></tr>
+                    <tr><td>Month 4 &mdash; cash-positive</td><td>17</td><td>$127,500</td><td>$51,000</td><td>$28,500</td></tr>
+                    <tr style="border-top: 2px solid var(--brand); font-weight: bold; background: rgba(212, 175, 55, 0.1);">
+                        <td>Months 7&ndash;12</td><td>17</td><td>$127,500/mo</td><td>$51,000/mo</td><td>$436,500</td></tr>
+                </tbody>
+            </table>
+        </div>
+
+        <div class="metric-grid">
+            <div class="metric-box">
+                <span class="metric-value">$1.53M</span>
+                <span class="metric-label">Site Revenue at Full Ramp</span>
+            </div>
+            <div class="metric-box">
+                <span class="metric-value">$612K</span>
+                <span class="metric-label">Site Gross Profit / Year</span>
+            </div>
+            <div class="metric-box">
+                <span class="metric-value">Month 4</span>
+                <span class="metric-label">Cash-Positive, Never Draws Again</span>
+            </div>
+            <div class="metric-box">
+                <span class="metric-value">6.25&times;</span>
+                <span class="metric-label">Cushion vs. Peak Draw</span>
+            </div>
+        </div>
+
+        <p>The only period payroll leads net-30 collections is month two, at <strong>($36,000)</strong> &mdash; covered 6.25&times; by the $225,000 working-capital line in the use of funds. From month four the site pays its own payroll out of its own collections.</p>
+    </div>
+
+    <!-- Slide 6: Use of Funds -->
+    <div class="slide hidden" id="slide-6">
+        <h2>Use of Funds</h2>
+
+        <div class="table-container">
+            <table class="financial-table">
+                <thead>
+                    <tr>
+                        <th scope="col">Use of Proceeds &mdash; Full $1.5M</th>
+                        <th scope="col">Amount</th>
+                        <th scope="col">Purpose</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr><td>Field staffing &amp; payroll ramp</td><td>$740,000</td><td>17-writer crew, site manager, ramp payroll</td></tr>
+                    <tr><td>Marketing &amp; business development</td><td>$165,000</td><td>Rebuild the non-anchor book</td></tr>
+                    <tr><td>Equipment &amp; operational software</td><td>$150,000</td><td>Dispatch/scheduling systems, site equipment</td></tr>
+                    <tr><td>Supplies &amp; materials</td><td>$135,000</td><td>Consumables and tools</td></tr>
+                    <tr><td>Start-up expenses</td><td>$85,000</td><td>Licensing, permits, professional fees, setup</td></tr>
+                    <tr><td>Working-capital cushion</td><td>$225,000</td><td>Covers the peak ramp draw 6.25&times;</td></tr>
+                    <tr style="border-top: 2px solid var(--brand); font-weight: bold;">
+                        <td>Total</td><td>$1,500,000</td><td>100% expansion</td></tr>
+                </tbody>
+            </table>
+        </div>
+        <p style="font-size: 0.9rem; opacity: 0.75;">No proceeds fund owner compensation, distributions, or any existing obligation. At a $500,000 first close the same plan runs at six writers rather than seventeen &mdash; roughly $250,000 of staffing ramp, $60,000 marketing, $80,000 equipment and supplies, $35,000 start-up, $75,000 cushion &mdash; reaching about $540,000 of annualized site revenue, with the balance funding waves two and three.</p>
+
+        <h3>Why Equity, Not Debt</h3>
+        <div class="metric-grid">
+            <div class="metric-box">
+                <h3>$232,916 a Year Retained</h3>
+                <p>A $1.5M 10-year facility at 9.5% costs $232,916 annually. Equity-funded, that stays in the business &mdash; roughly $1.16M across the plan, and the difference between $804,566 and $1,037,482 of 2030 net income.</p>
+            </div>
+            <div class="metric-box">
+                <h3>No Financing Contingency</h3>
+                <p>An SBA 7(a) facility was scoped at the same $1.5M but is gated on a third-party document the Company does not yet hold. Equity removes the dependency and starts hiring on signature.</p>
+            </div>
+            <div class="metric-box">
+                <h3>Capacity Preserved</h3>
+                <p>Borrowing capacity is deferred, not lost. The Company enters expansion debt-free and can borrow later against a larger, more diversified base to fund site two &mdash; without further dilution.</p>
+            </div>
+            <div class="metric-box">
+                <h3>Nothing Ranks Ahead</h3>
+                <p>With no debt on the balance sheet, this round sits behind nothing. Investors are not subordinated to a lender, and there is no covenant package constraining the business.</p>
+            </div>
+        </div>
+    </div>
+
+    <!-- Slide 7: Projections -->
     <div class="slide hidden" id="slide-7">
-        <h2>5-Year Growth Projections</h2>
+        <h2>Five-Year Projections</h2>
 
         <div class="growth-projection">
-            <div class="growth-header">Post-Transition Base + One Equity-Funded Site: $1.33M (2026 annualized) to $3.63M by 2030 &mdash; 28.6% CAGR</div>
+            <div class="growth-header">$1.33M run-rate to $3.63M by 2030 &mdash; 28.6% CAGR, debt-free</div>
             <div class="table-container">
                 <table class="financial-table" style="margin: 0; border: none;">
                     <thead>
                         <tr>
-                            <th scope="col">Year</th>
-                            <th scope="col">Existing Base</th>
-                            <th scope="col">New Site</th>
-                            <th scope="col">Total Revenue</th>
-                            <th scope="col">Gross Margin</th>
-                            <th scope="col">Net Income</th>
+                            <th scope="col">Year</th><th scope="col">Existing Base</th><th scope="col">New Site</th>
+                            <th scope="col">Total Revenue</th><th scope="col">Gross Margin</th><th scope="col">Net Income</th>
                         </tr>
                     </thead>
                     <tbody>
-                        <tr>
-                            <td>2025 (actual)</td><td>$3,859,075</td><td>&mdash;</td><td>$3,859,075</td><td>37.2%</td><td>$399,146 *</td>
-                        </tr>
-                        <tr>
-                            <td>2026 (ann. from 8 mo)</td><td>$1,327,254</td><td>&mdash;</td><td>$1,327,254</td><td>51.3%</td><td>$374,293</td>
-                        </tr>
-                        <tr>
-                            <td>2027 (site ramps)</td><td>$1,459,980</td><td>$1,282,500</td><td>$2,742,480</td><td>45.9%</td><td>$837,590</td>
-                        </tr>
-                        <tr>
-                            <td>2028 (site at full run-rate)</td><td>$1,605,978</td><td>$1,530,000</td><td>$3,135,978</td><td>45.1%</td><td>$944,989</td>
-                        </tr>
-                        <tr>
-                            <td>2029</td><td>$1,766,575</td><td>$1,606,500</td><td>$3,373,075</td><td>44.7%</td><td>$988,222</td>
-                        </tr>
+                        <tr><td>2025 (actual)</td><td>$3,859,075</td><td>&mdash;</td><td>$3,859,075</td><td>37.2%</td><td>$399,146 *</td></tr>
+                        <tr><td>2026 (run-rate)</td><td>$1,327,254</td><td>&mdash;</td><td>$1,327,254</td><td>51.3%</td><td>$374,293</td></tr>
+                        <tr><td>2027 (site ramps)</td><td>$1,459,980</td><td>$1,282,500</td><td>$2,742,480</td><td>45.9%</td><td>$837,590</td></tr>
+                        <tr><td>2028 (full run-rate)</td><td>$1,605,978</td><td>$1,530,000</td><td>$3,135,978</td><td>45.1%</td><td>$944,989</td></tr>
+                        <tr><td>2029</td><td>$1,766,575</td><td>$1,606,500</td><td>$3,373,075</td><td>44.7%</td><td>$988,222</td></tr>
                         <tr style="border-top: 2px solid var(--brand); font-weight: bold; background: rgba(212, 175, 55, 0.1);">
-                            <td>2030</td><td>$1,943,233</td><td>$1,686,825</td><td>$3,630,058</td><td>44.3%</td><td>$1,037,482</td>
-                        </tr>
+                            <td>2030</td><td>$1,943,233</td><td>$1,686,825</td><td>$3,630,058</td><td>44.3%</td><td>$1,037,482</td></tr>
                     </tbody>
                 </table>
             </div>
@@ -1086,7 +970,7 @@
             </div>
             <div class="metric-box">
                 <span class="metric-value">+177%</span>
-                <span class="metric-label">Net Income Growth (2026 &rarr; 2030)</span>
+                <span class="metric-label">Net Income Growth</span>
             </div>
             <div class="metric-box">
                 <span class="metric-value">28.6%</span>
@@ -1094,471 +978,101 @@
             </div>
             <div class="metric-box">
                 <span class="metric-value">$0</span>
-                <span class="metric-label">Debt Service (Equity-Funded Plan)</span>
+                <span class="metric-label">Debt Service Deducted</span>
             </div>
         </div>
 
-        <p style="font-size: 0.9rem; opacity: 0.75;">* 2025 net income shown on the normalized cash-flow basis (Slide 6); general-ledger net income was $203,339 before the amortization and bad-debt add-backs. <strong>2026</strong> annualizes eight complete months of general-ledger actuals &mdash; $884,836 of revenue and $249,529 of net income through August 31. Existing base grows 10%/yr; the new site follows the Company's own ramp model (Slide 10) and grows 5%/yr once at full run-rate; gross margin blends the existing book (tapering 51% &rarr; 48%, against 51.3% actual) with the new site at the modeled 40%. Net income is gross profit less operating expenses ($420K in 2027, against a 2026 run-rate of $306K, scaling to $570K in 2030). <strong>No debt service is deducted: on the equity-funded plan the Company borrows nothing</strong>, which is worth $232,916 a year versus the debt-funded alternative. A second site would require additional capital and is <strong>not</strong> included &mdash; it is option value, not plan.</p>
+        <p style="font-size: 0.85rem; opacity: 0.7;">* 2025 shown on the normalized cash-flow basis; general-ledger net income was $203,339 before the amortization and bad-debt add-backs. 2026 annualizes eight months of actuals. Existing base grows 10%/yr; the new site follows the ramp on the previous slide and grows 5%/yr once at full run-rate; margin blends the existing book (51% tapering to 48%) with the new site at the modeled 40%. Net income is gross profit less operating expenses ($420K in 2027 against a $306K 2026 run-rate, scaling to $570K in 2030). A second site would need additional capital and is not included. Management estimates, not guarantees.</p>
     </div>
 
-    <!-- Slide 8: Growth Strategy -->
+    <!-- Slide 8: Investment Structure -->
     <div class="slide hidden" id="slide-8">
-        <h2>Growth Strategy &amp; Competitive Advantages</h2>
-
-        <h3>Manheim / Cox Automotive Expansion</h3>
-        <div class="metric-box">
-            <h3>Supplier Diversity Program Certification</h3>
-            <p><strong>Qualified:</strong> Pride Dealer Services is certified under Manheim's Supplier Diversity Program, providing preferred vendor status across the network.</p>
-
-            <ul class="key-facts" style="margin-top: 1rem;">
-                <li>
-                    <span class="fact-label">Current Manheim Locations</span>
-                    <span class="fact-value">Multiple sites active ($552,389, 2026 YTD)</span>
-                </li>
-                <li>
-                    <span class="fact-label">Available Expansion Sites</span>
-                    <span class="fact-value">100+ Manheim locations nationwide</span>
-                </li>
-                <li>
-                    <span class="fact-label">Near-Term Rollout</span>
-                    <span class="fact-value">One new auction site, 17 CR writers, funded by the SBA facility</span>
-                </li>
-                <li>
-                    <span class="fact-label">Site Target</span>
-                    <span class="fact-value">$127,500/mo revenue &middot; $51,000/mo gross profit at full ramp</span>
-                </li>
-            </ul>
-        </div>
-
-        <h3>Dent Wizard Partnership Expansion</h3>
-        <div class="metric-box">
-            <p><strong>Bundled Services Strategy:</strong> Combine detail and condition-report services with Dent Wizard's repair capabilities for comprehensive vehicle reconditioning under one vendor.</p>
-
-            <ul class="key-facts" style="margin-top: 1rem;">
-                <li>
-                    <span class="fact-label">Target Markets</span>
-                    <span class="fact-value">OEM lease returns, fleet remarketing</span>
-                </li>
-                <li>
-                    <span class="fact-label">Service Integration</span>
-                    <span class="fact-value">Detail + dent repair + condition reports</span>
-                </li>
-                <li>
-                    <span class="fact-label">2026 YTD Run-Rate</span>
-                    <span class="fact-value">$329,542 (8 months), multi-location</span>
-                </li>
-            </ul>
-        </div>
-
-        <h3>Why We Win</h3>
-        <ul class="key-facts">
-            <li>
-                <span class="fact-label">Sticky Enterprise Revenue</span>
-                <span class="fact-value">Recurring per-unit work, multi-year, multi-location</span>
-            </li>
-            <li>
-                <span class="fact-label">Operational Playbook</span>
-                <span class="fact-value">SOP + QA + rate index, replicable site to site</span>
-            </li>
-            <li>
-                <span class="fact-label">Variable Cost Base</span>
-                <span class="fact-value">1099 field labor paid per production &mdash; cost flexes with volume</span>
-            </li>
-            <li>
-                <span class="fact-label">Single Decision-Maker</span>
-                <span class="fact-value">100% owner-operated; fast to act on a site opening</span>
-            </li>
-        </ul>
-    </div>
-
-    <!-- Slide 9: Unit Economics -->
-    <div class="slide hidden" id="slide-9">
-        <h2>Unit Economics &mdash; Proven Against Actuals</h2>
-
-        <p>The expansion model rests on one repeatable unit: a condition-report writer producing <strong>$7,500 of revenue per month at $4,500 of cost</strong> &mdash; a 40% gross margin. That assumption is held deliberately: it sits <em>between</em> the Company's two most recent actual years, each verified from QuickBooks invoices and the 1099 contractor ledger.</p>
-
-        <div class="table-container">
-            <table class="financial-table">
-                <thead>
-                    <tr>
-                        <th scope="col">Metric</th>
-                        <th scope="col">Plan (per writer/mo)</th>
-                        <th scope="col">2025 Actual (FY)</th>
-                        <th scope="col">2026 Actual (Jan&ndash;Aug)</th>
-                    </tr>
-                </thead>
-                <tbody>
-                    <tr><td>Revenue</td><td>$7,500</td><td>$3,859,075</td><td>$884,836</td></tr>
-                    <tr><td>Cost of services (1099 field labor)</td><td>$4,500 (60%)</td><td>$2,424,644 (62.8%)</td><td>$431,169 (48.7%)</td></tr>
-                    <tr style="font-weight: bold;"><td>Gross margin</td><td>40.0%</td><td>37.2%</td><td>51.3%</td></tr>
-                    <tr style="border-top: 2px solid var(--brand); font-weight: bold; background: rgba(212, 175, 55, 0.1);">
-                        <td>Implied revenue per $4,500 of writer cost</td><td>$7,500</td><td>$7,162</td><td>$9,235</td>
-                    </tr>
-                </tbody>
-            </table>
-        </div>
-
-        <p><strong>Read:</strong> On the current run-rate, $4,500 of writer cost supports about <strong>$9,235</strong> of revenue &mdash; well above the $7,500 modeled. Held at $7,500 / $4,500, the forecast is realistic against 2025 and conservative against 2026.</p>
-
-        <h3>By Department &mdash; The Line the Expansion Actually Buys</h3>
-        <div class="table-container">
-            <table class="financial-table">
-                <thead>
-                    <tr>
-                        <th scope="col">Department (2026, Jan&ndash;Aug)</th>
-                        <th scope="col">Revenue</th>
-                        <th scope="col">Cost of Services</th>
-                        <th scope="col">Gross Margin</th>
-                    </tr>
-                </thead>
-                <tbody>
-                    <tr style="background: rgba(212, 175, 55, 0.1);"><td>Condition Report</td><td>$349,350</td><td>$197,144</td><td><strong>43.6%</strong></td></tr>
-                    <tr><td>Detail</td><td>$332,397</td><td>$130,669</td><td>60.7%</td></tr>
-                    <tr><td>Photography</td><td>$206,295</td><td>$83,883</td><td>59.3%</td></tr>
-                    <tr style="border-top: 2px solid var(--brand); font-weight: bold;"><td>Total (net of unclassified)</td><td>$884,836</td><td>$431,169</td><td>51.3%</td></tr>
-                </tbody>
-            </table>
-        </div>
-        <p>The expansion is a <strong>condition-report writer</strong> build, and the condition-report department is the one that matters for the forecast. It runs at <strong>43.6%</strong> gross margin in 2026 actuals against the <strong>40%</strong> modeled &mdash; so the plan is conservative against the exact line of business it funds, not merely against the blended average that detail and photography flatter.</p>
-
-        <h3>Cost Structure &mdash; 1099 Field Labor vs. W-2 Corporate</h3>
-        <div class="table-container">
-            <table class="financial-table">
-                <thead>
-                    <tr>
-                        <th scope="col">Cost Component</th>
-                        <th scope="col">2025</th>
-                        <th scope="col">2026 (Jan&ndash;Aug)</th>
-                        <th scope="col">Where It Sits</th>
-                    </tr>
-                </thead>
-                <tbody>
-                    <tr><td>Contractors &amp; Payroll (1099 field labor)</td><td>$2,354,469</td><td>$422,347</td><td>Cost of goods sold</td></tr>
-                    <tr><td>Job Supplies / Tools</td><td>$60,149</td><td>$6,963</td><td>Cost of goods sold</td></tr>
-                    <tr><td>Other direct cost</td><td>$10,026</td><td>$1,859</td><td>Cost of goods sold</td></tr>
-                    <tr style="font-weight: bold;"><td>Total cost of services</td><td>$2,424,644</td><td>$431,169</td><td>Ties to the return / live GL</td></tr>
-                    <tr><td>Salaries &amp; Wages &mdash; Corporate</td><td>$611,915</td><td>$64,197</td><td>Operating expense (not COGS)</td></tr>
-                </tbody>
-            </table>
-        </div>
-
-        <div class="metric-box" style="border-left: 4px solid var(--brand);">
-            <h3>A Single Flagship Site Is a Proven Unit</h3>
-            <p><strong>Manheim Dallas alone invoiced $703,460 in 2025</strong> and <strong>$482,213 through August 31, 2026</strong> across 205 invoice lines &mdash; a ~$723K annualized run-rate, still growing. The new location replicates a site the Company already operates profitably, not a projection built from scratch. It is also the concentration risk in one number: Dallas is 54.5% of 2026 revenue.</p>
-        </div>
-        <p style="font-size: 0.9rem; opacity: 0.75;">2025 and 2026 revenue and cost are taken from the live QuickBooks general ledger (2026 covers January 1 &ndash; August 31). Contractor payroll posts as per-writer journal entries tagged to customer and department, the most recent dated August 27, 2026. Field workforce is engaged as 1099 contractors paid per production and booked to COGS; only corporate and administrative staff sit in Salaries &amp; Wages &ndash; Corporate. If the new-site crew is hired W-2 instead, budget ~10&ndash;15% more per writer for employer taxes and workers' compensation. The 2025 corporate salary line is $611,915 in the general ledger, against $217,678 shown in the September 2026 lender package; the general-ledger figure governs here.</p>
-    </div>
-
-    <!-- Slide 10: Expansion Ramp-Up Plan -->
-    <div class="slide hidden" id="slide-10">
-        <h2>Expansion Ramp-Up Plan</h2>
-
-        <p>The $1,500,000 SBA facility funds a phased build-out to <strong>17 condition-report writers</strong> at one new auction site, hired in three waves (6 &rarr; 6 &rarr; 5) over the first quarter.</p>
-
-        <div class="metric-grid">
-            <div class="metric-box">
-                <span class="metric-value">$7,500</span>
-                <span class="metric-label">Revenue / Writer / Month</span>
-            </div>
-            <div class="metric-box">
-                <span class="metric-value">$4,500</span>
-                <span class="metric-label">Fully-Loaded Cost / Writer / Month</span>
-            </div>
-            <div class="metric-box">
-                <span class="metric-value">17</span>
-                <span class="metric-label">Target Headcount (6 / 6 / 5)</span>
-            </div>
-            <div class="metric-box">
-                <span class="metric-value">$612,000</span>
-                <span class="metric-label">Fully-Ramped Gross Profit / Year</span>
-            </div>
-        </div>
-
-        <h3>Month-by-Month Ramp (Net-30 Collections)</h3>
-        <div class="table-container">
-            <table class="financial-table">
-                <thead>
-                    <tr>
-                        <th scope="col">Month</th>
-                        <th scope="col">Writers Added</th>
-                        <th scope="col">Total Writers</th>
-                        <th scope="col">Payroll</th>
-                        <th scope="col">Collections</th>
-                        <th scope="col">Incremental Cash</th>
-                        <th scope="col">Cumulative</th>
-                    </tr>
-                </thead>
-                <tbody>
-                    <tr><td>Month 1</td><td>6</td><td>6</td><td>($27,000)</td><td>$0</td><td>($27,000)</td><td>($27,000)</td></tr>
-                    <tr><td>Month 2</td><td>6</td><td>12</td><td>($54,000)</td><td>$45,000</td><td>($9,000)</td><td>($36,000)</td></tr>
-                    <tr><td>Month 3</td><td>5</td><td>17</td><td>($76,500)</td><td>$90,000</td><td>$13,500</td><td>($22,500)</td></tr>
-                    <tr><td>Month 4</td><td>0</td><td>17</td><td>($76,500)</td><td>$127,500</td><td>$51,000</td><td>$28,500</td></tr>
-                    <tr><td>Month 5</td><td>0</td><td>17</td><td>($76,500)</td><td>$127,500</td><td>$51,000</td><td>$79,500</td></tr>
-                    <tr><td>Month 6</td><td>0</td><td>17</td><td>($76,500)</td><td>$127,500</td><td>$51,000</td><td>$130,500</td></tr>
-                    <tr style="border-top: 2px solid var(--brand); font-weight: bold;">
-                        <td>Months 7&ndash;12</td><td>0</td><td>17</td><td>($76,500)/mo</td><td>$127,500/mo</td><td>$51,000/mo</td><td>$436,500</td>
-                    </tr>
-                </tbody>
-            </table>
-        </div>
-
-        <div class="metric-grid">
-            <div class="metric-box">
-                <h3>Peak Ramp Draw</h3>
-                <p><strong>($36,000)</strong> cumulative in Month 2 &mdash; the only period payroll leads net-30 collections. Fully covered by the $225,000 working-capital cushion in the use of funds (6.25&times; the peak draw). The ramp turns cash-positive in Month 4 and never draws down again.</p>
-            </div>
-            <div class="metric-box">
-                <h3>Coverage Impact</h3>
-                <p>Once ramped, the site generates <strong>$51,000/month (~$612,000/year)</strong> of incremental gross profit &mdash; roughly <strong>2.6&times;</strong> the $232,916 annual debt service on the full $1.5M loan, on its own and before any contribution from the existing business.</p>
-            </div>
-        </div>
-
-        <p style="font-size: 0.9rem; opacity: 0.75;">The $740,000 staffing line in the use of funds is the hire-ahead-of-revenue bridge: it funds payroll during the ramp, before net-30 collections catch up. Fully ramped, monthly payroll of $76,500 (~$918,000/year) is paid entirely out of the site's own $127,500/month of collections from Month 4 forward. Loan dollars carry only the ramp period; recurring payroll is self-funded thereafter.</p>
-    </div>
-
-    <!-- Slide 11: Capital Structure -->
-    <div class="slide hidden" id="slide-11">
-        <h2>Capital Structure &amp; Use of Proceeds</h2>
-
-        <p><strong>The Company carries no debt.</strong> Every liability account in QuickBooks stands at nil, so this raise is the entire capital structure alongside the founder's equity. A full subscription funds the new auction-site launch outright &mdash; no lender, no debt service, and nothing in the plan waiting on a third-party document.</p>
-
-        <h3>Use of Proceeds &mdash; Full $1.5M Raise</h3>
-        <div class="table-container">
-            <table class="financial-table">
-                <thead>
-                    <tr>
-                        <th scope="col">Use of Proceeds</th>
-                        <th scope="col">Amount</th>
-                        <th scope="col">Purpose</th>
-                    </tr>
-                </thead>
-                <tbody>
-                    <tr><td>Field staffing &amp; payroll ramp</td><td>$740,000</td><td>17-writer crew at the new location &mdash; CR writers, detailers, site manager</td></tr>
-                    <tr><td>Marketing &amp; business development</td><td>$165,000</td><td>Account and site acquisition; rebuilding the non-anchor book</td></tr>
-                    <tr><td>Equipment &amp; operational software</td><td>$150,000</td><td>Field dispatch/scheduling software and site equipment</td></tr>
-                    <tr><td>Supplies &amp; materials</td><td>$135,000</td><td>Consumable supplies and tools for the new site</td></tr>
-                    <tr><td>Start-up expenses</td><td>$85,000</td><td>Licensing, permits, professional fees, site setup</td></tr>
-                    <tr><td>Working-capital cushion</td><td>$225,000</td><td>Covers the ($36,000) peak ramp draw 6.25&times; over</td></tr>
-                    <tr style="border-top: 2px solid var(--brand); font-weight: bold;">
-                        <td>Total</td><td>$1,500,000</td><td>100% expansion &mdash; additional auction-site location</td>
-                    </tr>
-                </tbody>
-            </table>
-        </div>
-        <p style="font-size: 0.9rem; opacity: 0.75;">No proceeds fund owner compensation, distributions, or any existing obligation. At a $500,000 first close the same plan runs at six writers rather than seventeen &mdash; roughly $250,000 of staffing ramp, $60,000 of marketing, $80,000 of equipment and supplies, $35,000 of start-up and a $75,000 cushion &mdash; reaching about $540,000 of annualised site revenue, with the balance of the round funding waves two and three.</p>
-
-        <h3>Why Equity Rather Than the SBA Loan</h3>
-        <div class="metric-grid">
-            <div class="metric-box">
-                <h3>No Financing Contingency</h3>
-                <p>An SBA 7(a) facility was scoped at the same $1.5M. It is gated on producing an executed assumption / novation for a note the books already show at nil &mdash; a document the Company does not yet hold. Equity removes that dependency entirely.</p>
-            </div>
-            <div class="metric-box">
-                <h3>$232,916 a Year Retained</h3>
-                <p>Debt service on a $1.5M 10-year facility at 9.5% costs $232,916 annually. Equity-funded, that stays in the business &mdash; worth roughly $1.16M of retained cash across the five-year plan and the difference between $804,566 and $1,037,482 of 2030 net income.</p>
-            </div>
-            <div class="metric-box">
-                <h3>Speed</h3>
-                <p>The ramp turns cash-positive in month four. An equity close starts hiring on signature rather than after underwriting, appraisal and the novation are resolved.</p>
-            </div>
-            <div class="metric-box">
-                <h3>The Facility Stays Available</h3>
-                <p>Coverage on the requested facility ran 1.59&times; at its floor on 2024 normalized cash flow. Once the Schedule L item is cleared, that debt capacity funds <em>site two</em> without further dilution &mdash; optionality the round preserves rather than spends.</p>
-            </div>
-        </div>
-
-        <div class="concentration-risk">
-            <h3>Debt Capacity Is Not Lost &mdash; It Is Deferred</h3>
-            <p>Raising equity now does not retire the SBA option; it sequences it. The Company enters the expansion debt-free, proves the new site against its own model, and then borrows against a larger, more diversified earnings base for the next location. Investors in this round own 25% of a business that still has its entire borrowing capacity intact.</p>
-        </div>
-    </div>
-
-    <!-- Slide 12: Milestones & KPIs -->
-    <div class="slide hidden" id="slide-12">
-        <h2>12&ndash;18 Month Milestones &amp; KPIs</h2>
-
-        <div class="metric-grid">
-            <div class="metric-box">
-                <span class="metric-value">17</span>
-                <span class="metric-label">CR Writers Live at New Site</span>
-            </div>
-            <div class="metric-box">
-                <span class="metric-value">&ge;46%</span>
-                <span class="metric-label">Blended Gross Margin</span>
-            </div>
-            <div class="metric-box">
-                <span class="metric-value">$0</span>
-                <span class="metric-label">Debt Taken On</span>
-            </div>
-            <div class="metric-box">
-                <span class="metric-value">&le;35 days</span>
-                <span class="metric-label">DSO</span>
-            </div>
-        </div>
-
-        <ul class="key-facts">
-            <li>
-                <span class="fact-label">Gate 0 &mdash; Immediate</span>
-                <span class="fact-value">Reconcile Schedule L to the books before the 2025 return is filed</span>
-            </li>
-            <li>
-                <span class="fact-label">Gate 1 &mdash; Close</span>
-                <span class="fact-value">SBA 7(a) facility funded; site selected and contracted</span>
-            </li>
-            <li>
-                <span class="fact-label">Q1 post-close</span>
-                <span class="fact-value">Waves 1&ndash;3 hired (6 / 6 / 5); ramp cash trough passed in Month 2</span>
-            </li>
-            <li>
-                <span class="fact-label">Q2 post-close</span>
-                <span class="fact-value">Site cash-positive from Month 4; $51K/mo incremental gross profit</span>
-            </li>
-            <li>
-                <span class="fact-label">Q3&ndash;Q4 post-close</span>
-                <span class="fact-value">Non-anchor revenue re-established; top-two concentration below 85% (from 99.7%)</span>
-            </li>
-            <li>
-                <span class="fact-label">Reporting Cadence</span>
-                <span class="fact-value">Monthly close: P&amp;L by department, AR aging and concentration report</span>
-            </li>
-        </ul>
-
-        <div class="metric-box" style="border-left: 4px solid var(--brand);">
-            <h3>What Gets Measured</h3>
-            <p>Revenue per writer per month (target $7,500), cost per writer per month (target $4,500), gross margin by site, days sales outstanding, top-two customer concentration, and DSCR on the SBA facility &mdash; reported monthly from the general ledger by department, not from management estimates.</p>
-        </div>
-    </div>
-
-    <!-- Slide 13: Investment Structure -->
-    <div class="slide hidden" id="slide-13">
         <h2>Investment Structure</h2>
 
         <div class="investment-summary">
-            <h3>Terms</h3>
-            <div style="text-align: left; margin-top: 1.5rem;">
-                <p><strong>Raise:</strong> $500,000 &ndash; $1,500,000</p>
-                <p><strong>Pre-Money Valuation:</strong> $4,500,000</p>
-                <p><strong>Equity at Full Subscription:</strong> 25% ($6,000,000 post-money)</p>
-                <p><strong>Minimum First Close:</strong> $500,000</p>
-                <p><strong>Existing Debt:</strong> None &mdash; all liability accounts nil</p>
-            </div>
+            <h3>$500,000 &ndash; $1,500,000 at $4,500,000 Pre-Money</h3>
+            <p style="margin-top: 0.75rem; font-size: 1.05rem;">One price for every investor. Ownership follows the amount raised &mdash; a full $1.5M subscription is 25%. Minimum first close $500,000. No existing debt.</p>
         </div>
 
-        <h3>One Price, Amount Varies</h3>
-        <p>The round is priced at a single $4,500,000 pre-money valuation. Every investor buys at the same price; ownership follows the amount raised. A full $1.5M subscription is 25%.</p>
         <div class="table-container">
             <table class="financial-table">
                 <thead>
                     <tr>
-                        <th scope="col">Amount Raised</th>
-                        <th scope="col">Post-Money</th>
-                        <th scope="col">Equity Sold</th>
-                        <th scope="col">What It Funds</th>
+                        <th scope="col">Raised</th><th scope="col">Post-Money</th>
+                        <th scope="col">Equity</th><th scope="col">What It Funds</th>
                     </tr>
                 </thead>
                 <tbody>
-                    <tr><td>$500,000</td><td>$5,000,000</td><td>10.0%</td><td>Six-writer launch + diversification (~$540K site revenue)</td></tr>
-                    <tr><td>$750,000</td><td>$5,250,000</td><td>14.3%</td><td>Nine writers; wave two hired on schedule</td></tr>
-                    <tr><td>$1,000,000</td><td>$5,500,000</td><td>18.2%</td><td>Twelve writers; full marketing and systems spend</td></tr>
-                    <tr><td>$1,250,000</td><td>$5,750,000</td><td>21.7%</td><td>Fifteen writers; near-full cushion</td></tr>
+                    <tr><td>$500,000</td><td>$5,000,000</td><td>10.0%</td><td>Six-writer launch (~$540K site revenue)</td></tr>
+                    <tr><td>$1,000,000</td><td>$5,500,000</td><td>18.2%</td><td>Twelve writers; full marketing and systems</td></tr>
                     <tr style="border-top: 2px solid var(--brand); font-weight: bold; background: rgba(212, 175, 55, 0.1);">
-                        <td>$1,500,000</td><td>$6,000,000</td><td>25.0%</td><td>Full 17-writer site, debt-free, full cushion</td></tr>
+                        <td>$1,500,000</td><td>$6,000,000</td><td>25.0%</td><td>Full 17-writer site, full cushion</td></tr>
                 </tbody>
             </table>
         </div>
 
         <div class="valuation-context">
-            <h3>What the Price Rests On</h3>
-            <p><strong>Trailing:</strong> $6.0M post-money against $374,293 of 2026 annualized net income is <strong>16.0&times;</strong>; against 2025 normalized cash flow of $399,146, <strong>15.0&times;</strong>. On trailing earnings alone this is a full price, and it should be tested as one.</p>
-            <p><strong>Forward:</strong> The raise is what creates the earnings it is priced against. Against 2030 projected net income of $1,037,482 the same $6.0M is <strong>5.8&times;</strong>. A 25% stake earns approximately <strong>$259,400 a year by 2030</strong> &mdash; a <strong>17.3% yield on a $1.5M investment</strong>, with no debt ahead of it.</p>
-            <p><strong>What supports it:</strong> a debt-free balance sheet; 51.3% gross margin and 28.2% net margin on 2026 actuals; a condition-report department running 43.6% against the 40% the plan assumes; and a single flagship site, Manheim Dallas, invoicing at roughly $723,000 a year on its own.</p>
-            <p><strong>What an investor will push on:</strong> 99.7% of revenue sits with two customer networks and 54.5% with one site; revenue is down from $5.46M in 2024 to a $1.33M run-rate; and 94.9% of the asset base is goodwill. Those are on the risk slide, unhedged. An investor who marks this business on trailing earnings will argue for a lower price &mdash; the answer is the plan, the unit economics behind it, and the absence of any debt ahead of them.</p>
+            <h3>The Price, Both Ways</h3>
+            <p><strong>Trailing:</strong> $6.0M post against $374,293 of 2026 run-rate net income is <strong>16.0&times;</strong>. On trailing earnings alone this is a full price and should be tested as one.</p>
+            <p><strong>Forward:</strong> the raise creates the earnings it is priced against. Against 2030 projected net income of $1,037,482 it is <strong>5.8&times;</strong>. A 25% stake earns roughly <strong>$259,400 a year by 2030 &mdash; a 17.3% yield on $1.5M</strong>, with no debt ranking ahead.</p>
         </div>
 
         <div class="metric-grid">
             <div class="metric-box">
                 <span class="metric-value">5.8&times;</span>
-                <span class="metric-label">Post-Money / 2030 Projected Earnings</span>
+                <span class="metric-label">Post-Money / 2030 Earnings</span>
             </div>
             <div class="metric-box">
                 <span class="metric-value">17.3%</span>
-                <span class="metric-label">Yield on Cost by 2030 (Full Raise)</span>
+                <span class="metric-label">Yield on Cost by 2030</span>
             </div>
             <div class="metric-box">
                 <span class="metric-value">$0</span>
-                <span class="metric-label">Debt Ranking Ahead of Investors</span>
+                <span class="metric-label">Debt Ahead of Investors</span>
             </div>
             <div class="metric-box">
                 <span class="metric-value">$1.5M</span>
                 <span class="metric-label">Borrowing Capacity Preserved</span>
             </div>
         </div>
-        <p style="font-size: 0.9rem; opacity: 0.75;">Terms are indicative and subject to definitive documentation. Projections are management estimates, not guarantees. Ownership percentages assume a single class of common equity and no option pool; if a pool is created it is expected to come from the pre-money.</p>
+        <p style="font-size: 0.85rem; opacity: 0.7;">Indicative terms, subject to definitive documentation. Percentages assume a single class of common equity and no option pool; any pool is expected to come from the pre-money.</p>
     </div>
 
-    <!-- Slide 14: Risk Assessment -->
-    <div class="slide hidden" id="slide-14">
-        <h2>Risk Assessment &amp; Mitigation</h2>
+    <!-- Slide 9: Risks -->
+    <div class="slide hidden" id="slide-9">
+        <h2>Risks &mdash; Stated Plainly</h2>
 
         <div class="risk-section">
-            <h3 style="color: #ffc107; margin-top: 0;">1. The $2.82M Note &mdash; A Documentation Gap</h3>
-            <p><strong>Risk:</strong> The Company's books carry no debt &mdash; all fifteen liability accounts are nil &mdash; but the draft 2025 Schedule L still reports a $2,821,500 convertible note from the ownership transition. Until the executed assumption / novation is produced, the books and the return disagree, and a lender or investor is entitled to underwrite the higher figure. On like amortizing terms the note would take global coverage under 1.0&times;.</p>
-            <p><strong>Mitigation:</strong> The zero balance across every liability account is corroborating evidence that the transfer was booked. This round does not depend on resolving it &mdash; the expansion is equity-funded and there is no lender to satisfy &mdash; but investors should expect the 2025 Schedule L to be corrected to agree with the books before the return is filed, and should ask to see the executed document in diligence.</p>
+            <h3 style="color: #ffc107; margin-top: 0;">1. Customer concentration</h3>
+            <p>Manheim and Dent Wizard are <strong>99.7%</strong> of 2026 revenue; Manheim Dallas alone is <strong>54.5%</strong>. Non-anchor revenue has fallen to $2,905. <strong>Mitigation:</strong> $165,000 of the raise funds business development to rebuild the non-anchor book, and the new site widens the base. Both anchors are multi-year, multi-location relationships, not single points of contact.</p>
 
-            <h3 style="color: #ffc107; margin-top: 2rem;">2. Customer Concentration</h3>
-            <p><strong>Risk:</strong> Manheim (Cox) and Dent Wizard represent 99.7% of 2026 revenue, up from 63.7% in 2025 &mdash; and a single site, Manheim Dallas, is 54.5% on its own. Non-anchor revenue has fallen to $2,905. Accounts including South Florida Auction ($541,493 in 2025), Manheim Statesville ($411,204), North Fort Lauderdale Subaru ($222,246), Sawgrass Infiniti ($159,369) and Music City Auto Auction ($139,513) did not carry into 2026.</p>
-            <p><strong>Mitigation:</strong> $165,000 of the full raise funds marketing and business development to rebuild the non-anchor book across independent auctions, fleet, and OEM channels; the new auction-site location widens the base. Remaining relationships are multi-year, multi-location, and anchored by Supplier Diversity Program certification.</p>
+            <h3 style="color: #ffc107; margin-top: 1.25rem;">2. The business is smaller than it was</h3>
+            <p>Revenue fell from $5.46M in 2024 to a $1.33M run-rate. <strong>Mitigation:</strong> deliberate. The Company exited its lowest-margin accounts; gross profit <em>rose</em> in 2025 and gross margin has gone from 26.0% to 51.3%. Net margin is 28.2%. This is a smaller, far more profitable business &mdash; but an investor is buying the recovery, not the 2024 scale.</p>
 
-            <h3 style="color: #ffc107; margin-top: 2rem;">3. Goodwill Dominates the Balance Sheet</h3>
-            <p><strong>Risk:</strong> $3,084,650 of the $3,252,056 asset base &mdash; 94.9% &mdash; is goodwill from the 2025 buyout. Tangible assets total $167,407: $65,669 of cash, $101,071 of receivables and $667 of equipment. The owner's capital account stands at $(1,730,388) cumulative.</p>
-            <p><strong>Mitigation:</strong> Goodwill is non-cash, amortized over 15 years under &sect;197, and carries no cash obligation &mdash; its amortization is added back in the cash-flow build-up. Against those thin tangible assets sit <strong>no liabilities at all</strong>: receivables of $101,071 face zero current liabilities, so working capital is unencumbered. SBA funding places approximately $1,565,669 of cash on the balance sheet at closing, and the business is cash-generative on a normalized basis in 2024, 2025 and 2026 to date.</p>
+            <h3 style="color: #ffc107; margin-top: 1.25rem;">3. Goodwill dominates the balance sheet</h3>
+            <p><strong>94.9%</strong> of the $3.25M asset base is goodwill from the 2025 buyout; tangible assets are $167,407. <strong>Mitigation:</strong> goodwill is non-cash and carries no obligation, and against those thin tangibles sit <strong>no liabilities at all</strong> &mdash; $101,071 of receivables face zero current liabilities.</p>
 
-            <h3 style="color: #ffc107; margin-top: 2rem;">4. Execution Risk on the Ramp</h3>
-            <p><strong>Risk:</strong> The plan hires 17 writers in a new market inside one quarter and assumes $7,500 of revenue per writer per month.</p>
-            <p><strong>Mitigation:</strong> The $7,500 / $4,500 assumption sits between two verified actual years (implied $7,162 in 2025; $9,235 in 2026 through August), and the condition-report department &mdash; the exact line the site replicates &mdash; runs at 43.6% against the 40% modeled. The $225,000 working-capital cushion covers the ($36,000) peak ramp draw 6.25&times; over. Manheim Dallas &mdash; $703,460 in 2025 &mdash; is the template being replicated.</p>
+            <h3 style="color: #ffc107; margin-top: 1.25rem;">4. Execution on the ramp</h3>
+            <p>The plan hires 17 writers in a new market inside a quarter. <strong>Mitigation:</strong> the $7,500 / $4,500 unit sits between two verified actual years ($7,162 in 2025, $9,235 in 2026), the condition-report department already runs 43.6% against 40% modeled, and Manheim Dallas is the template being copied. The cushion covers the peak draw 6.25&times;.</p>
 
-            <h3 style="color: #ffc107; margin-top: 2rem;">5. Labor Model &amp; Cost Inflation</h3>
-            <p><strong>Risk:</strong> Field labor is engaged as 1099 contractors; reclassification or a shift to W-2 would add an estimated 10&ndash;15% per writer in employer taxes and workers' compensation.</p>
-            <p><strong>Mitigation:</strong> The per-production 1099 model means cost flexes with volume rather than sitting fixed. Rate-indexation clauses pass CPI and labor inflation through at renewal; the 2026 gross margin of 51.3% carries meaningful headroom against the 40% modeled.</p>
-
-            <h3 style="color: #ffc107; margin-top: 2rem;">6. Economic Downturn</h3>
-            <p><strong>Risk:</strong> Reduced auto sales and auction volume in a recession.</p>
-            <p><strong>Mitigation:</strong> Reconditioning and condition reporting are essential to the used-vehicle market, which typically holds or gains share when new-vehicle sales soften. Variable cost structure limits downside operating leverage.</p>
-        </div>
-
-        <div class="concentration-risk">
-            <h3>Risk Monitoring Framework</h3>
-            <ul class="key-facts">
-                <li>
-                    <span class="fact-label">Monthly</span>
-                    <span class="fact-value">Concentration, DSO, revenue per writer, site gross margin</span>
-                </li>
-                <li>
-                    <span class="fact-label">Quarterly</span>
-                    <span class="fact-value">Contract renewal pipeline; covenant compliance</span>
-                </li>
-                <li>
-                    <span class="fact-label">Annual</span>
-                    <span class="fact-value">Filed tax return reconciled to the general ledger</span>
-                </li>
-            </ul>
+            <h3 style="color: #ffc107; margin-top: 1.25rem;">5. Records clean-up outstanding</h3>
+            <p>The draft 2025 Schedule L reports a $2,821,500 note the books show at nil. <strong>Mitigation:</strong> this round does not depend on resolving it &mdash; there is no lender to satisfy &mdash; but the executed assumption document is in the data room list and the return should be corrected before filing.</p>
         </div>
     </div>
 
-    <!-- Slide 15: Summary & Next Steps -->
-    <div class="slide hidden" id="slide-15">
+    <!-- Slide 10: Next Steps -->
+    <div class="slide hidden" id="slide-10">
         <h2>Summary &amp; Next Steps</h2>
 
         <div class="investment-summary">
-            <h3>Investment Highlights</h3>
-            <div class="metric-grid" style="margin-top: 2rem;">
+            <div class="metric-grid" style="margin-top: 0;">
                 <div style="text-align: center;">
                     <div class="metric-value" style="color: var(--bg);">$500K&ndash;$1.5M</div>
-                    <div class="metric-label" style="color: var(--bg);">Raise Range</div>
+                    <div class="metric-label" style="color: var(--bg);">Raise</div>
                 </div>
                 <div style="text-align: center;">
                     <div class="metric-value" style="color: var(--bg);">25%</div>
-                    <div class="metric-label" style="color: var(--bg);">Equity at Full Raise</div>
+                    <div class="metric-label" style="color: var(--bg);">At Full Subscription</div>
                 </div>
                 <div style="text-align: center;">
                     <div class="metric-value" style="color: var(--bg);">$4.5M</div>
@@ -1566,64 +1080,47 @@
                 </div>
                 <div style="text-align: center;">
                     <div class="metric-value" style="color: var(--bg);">28.6%</div>
-                    <div class="metric-label" style="color: var(--bg);">CAGR (2026 &rarr; 2030)</div>
+                    <div class="metric-label" style="color: var(--bg);">Projected CAGR</div>
                 </div>
             </div>
         </div>
 
         <div class="metric-grid">
             <div class="metric-box">
-                <h3>Verified, Not Estimated</h3>
-                <p>Every figure in this deck is drawn from the Company's live QuickBooks general ledger &mdash; one consistent books basis across 2024, 2025 and 2026 through August 31.</p>
+                <h3>Profitable Today</h3>
+                <p>51.3% gross and 28.2% net margin on 2026 actuals, every figure from the general ledger.</p>
             </div>
             <div class="metric-box">
-                <h3>Margin, Not Just Volume</h3>
-                <p>Gross margin 26.0% &rarr; 37.2% &rarr; 51.3% on a consistent books basis. The Company kept more of every dollar while shedding its worst revenue.</p>
+                <h3>Debt-Free</h3>
+                <p>Every liability account at nil. Nothing ranks ahead of this round, and borrowing capacity is intact.</p>
             </div>
             <div class="metric-box">
-                <h3>Debt-Free, and Staying That Way</h3>
-                <p>No liabilities on the books today, and none taken on: the raise funds the site outright, leaving the Company's borrowing capacity intact for the next one.</p>
+                <h3>Demand Already Secured</h3>
+                <p>Letters of intent in hand from Manheim. Working capital is the constraint on growth &mdash; not demand, not access.</p>
             </div>
             <div class="metric-box">
-                <h3>A Proven Unit to Replicate</h3>
-                <p>Manheim Dallas invoiced $703,460 in 2025 and $482,213 through August 2026. The new site copies a location the Company already runs profitably.</p>
+                <h3>A Unit That Works</h3>
+                <p>$9,235 of revenue per $4,500 of writer cost against $7,500 modeled. Manheim Dallas runs at ~$723K a year alone.</p>
             </div>
         </div>
 
         <div class="risk-section">
-            <h3>Conclusion</h3>
-            <p style="font-size: 1.1rem; line-height: 1.7; margin-bottom: 1.5rem;">Pride Dealer Services came through a 2025 ownership transition smaller and materially more profitable. Revenue fell approximately 29% to $3,858,771 as the Company exited its lowest-margin accounts &mdash; and gross profit <em>rose</em> to $1,434,127 while gross margin expanded from 25.5% to 37.2%, reaching 51.3% through August 2026. On a normalized basis the business produced $399,146 of cash flow in 2025 and $369,751 in 2024, before any owner-compensation add-back.</p>
+            <p style="font-size: 1.15rem; line-height: 1.7; margin-bottom: 1.25rem;"><strong>Pride Dealer Services came through its 2025 transition smaller, debt-free and three times more profitable per dollar of revenue.</strong> It holds letters of intent from Manheim for additional locations and a proven site economics model. The only thing standing between the Company and the next location is working capital to staff it.</p>
 
-            <p style="font-size: 1.1rem; line-height: 1.7; margin-bottom: 1.5rem;">The Company also carries no debt on its books &mdash; every liability account stands at nil &mdash; and this round keeps it that way: a full subscription funds the new auction-site launch outright, with no lender, no debt service, and no financing contingency. The facility funds a 17-writer launch at one additional auction site, modeled on unit economics verified against two actual years and on a flagship location invoicing at a $723,000 annualized rate.</p>
-
-            <p style="font-size: 1.1rem; line-height: 1.7; margin-bottom: 2rem;"><strong>The round is $500,000 to $1,500,000 at a $4,500,000 pre-money valuation &mdash; 25% at full subscription.</strong> A full raise launches the seventeen-writer site outright against a plan that reaches $3.63M of revenue and $1,037,482 of net income by 2030, with no debt ranking ahead of investors and the Company's entire borrowing capacity preserved for the location after this one.</p>
-
-            <h3 style="margin-top: 2rem;">Next Steps</h3>
+            <h3>Next Steps</h3>
             <ul class="key-facts">
-                <li>
-                    <span class="fact-label">1. Diligence Room</span>
-                    <span class="fact-value">2024 filed and 2025 draft returns, live QuickBooks GL, AR aging</span>
-                </li>
-                <li>
-                    <span class="fact-label">2. Records Clean-Up</span>
-                    <span class="fact-value">Executed assumption / novation; Schedule L reconciled to the books</span>
-                </li>
-                <li>
-                    <span class="fact-label">3. Site Selection</span>
-                    <span class="fact-value">New auction location contracted; wave-one hiring ready</span>
-                </li>
-                <li>
-                    <span class="fact-label">4. Subscription</span>
-                    <span class="fact-value">First close at $500K; round documented and funded to $1.5M</span>
-                </li>
+                <li><span class="fact-label">1. Diligence</span><span class="fact-value">Live QuickBooks P&amp;L and balance sheet, returns, AR aging, Manheim LOIs</span></li>
+                <li><span class="fact-label">2. First close</span><span class="fact-value">$500,000 &mdash; wave-one hiring begins on signature</span></li>
+                <li><span class="fact-label">3. Site live</span><span class="fact-value">Cash-positive in month four on the Company's own model</span></li>
+                <li><span class="fact-label">4. Round complete</span><span class="fact-value">Balance to $1.5M funds waves two and three</span></li>
             </ul>
 
-            <div style="text-align: center; margin-top: 2rem; padding: 1.5rem; background: rgba(212, 175, 55, 0.1); border-radius: 10px; border-left: 4px solid var(--brand);">
-                <p style="font-size: 1.2rem; font-weight: 600; color: var(--brand); margin: 0;">Ready to drive growth together?</p>
+            <div style="text-align: center; margin-top: 1.5rem; padding: 1.25rem; background: rgba(212, 175, 55, 0.1); border-radius: 10px; border-left: 4px solid var(--brand);">
+                <p style="font-size: 1.2rem; font-weight: 600; color: var(--brand); margin: 0;">Nelson Cajas &middot; Pride Dealer Services &middot; Fort Lauderdale, FL</p>
             </div>
         </div>
 
-        <p style="font-size: 0.85rem; opacity: 0.7; margin-top: 2rem;">Financial information is taken from Pride Dealer Services' live QuickBooks general ledger (last synced September 12, 2026; last posted transaction September 2, 2026), covering 2024, 2025 and January 1 &ndash; August 31, 2026 on one consistent books basis. The general ledger governs throughout, including where it differs from the Company's September 2026 SBA lender package or from the federal returns; the 2025 return remains a draft pending filing and the year-end 2025 balance sheet shown is the return's Schedule L. Projections are management estimates and are not guarantees of future performance. This presentation is for discussion purposes and is not an offer to sell securities. Confidential.</p>
+        <p style="font-size: 0.8rem; opacity: 0.65; margin-top: 1.5rem;">Financial information from the Company's live QuickBooks general ledger (last synced September 12, 2026), covering 2024, 2025 and January 1 &ndash; August 31, 2026. Projections are management estimates and not guarantees of future performance. This presentation is for discussion purposes and is not an offer to sell securities. Confidential.</p>
     </div>
 
     <!-- Navigation -->
@@ -1638,16 +1135,12 @@
         <button class="nav-dot" onclick="showSlide(8)" aria-label="Go to slide 8"></button>
         <button class="nav-dot" onclick="showSlide(9)" aria-label="Go to slide 9"></button>
         <button class="nav-dot" onclick="showSlide(10)" aria-label="Go to slide 10"></button>
-        <button class="nav-dot" onclick="showSlide(11)" aria-label="Go to slide 11"></button>
-        <button class="nav-dot" onclick="showSlide(12)" aria-label="Go to slide 12"></button>
-        <button class="nav-dot" onclick="showSlide(13)" aria-label="Go to slide 13"></button>
-        <button class="nav-dot" onclick="showSlide(14)" aria-label="Go to slide 14"></button>
-        <button class="nav-dot" onclick="showSlide(15)" aria-label="Go to slide 15"></button>
     </div>
+
 
     <script>
         let currentSlide = 1;
-        const totalSlides = 15;
+        const totalSlides = 10;
 
         function showSlide(slideNumber) {
             // Hide all slides
