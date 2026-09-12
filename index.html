@@ -556,10 +556,44 @@
         }
         
         @media print {
+            /* every slide prints, not just the one on screen */
+            .slide.hidden {
+                display: flex !important;
+            }
+            body {
+                /* flat colour, not a gradient: keeps the PDF small */
+                background: #1a1a2e !important;
+            }
+            /* the per-slide radial SVG bloats the PDF and adds nothing in print */
+            .slide::before {
+                display: none;
+            }
             .slide {
                 min-height: auto;
                 page-break-after: always;
+                page-break-inside: auto;
                 position: relative;
+                backdrop-filter: none;
+                background: transparent;
+                max-width: none;
+                padding: 1.25rem 1rem 2.25rem;
+                border-bottom: none;
+            }
+            .table-container {
+                overflow-x: visible;
+            }
+            table, .metric-box, .investment-summary, .partnership-section,
+            .concentration-risk, .valuation-context, .growth-projection {
+                page-break-inside: avoid;
+            }
+            h2, h3 {
+                page-break-after: avoid;
+            }
+            /* narrower minimum so a four-box row stays on one line */
+            .metric-grid {
+                grid-template-columns: repeat(auto-fit, minmax(185px, 1fr));
+                gap: 1rem;
+                margin: 1.25rem 0;
             }
             .slide:last-child {
                 page-break-after: avoid;
